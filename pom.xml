@@ -29,6 +29,18 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<username>urvashi333</username>
+		                <environment>Sandbox</environment>
+		                <workers>1</workers>
+		                <workerType>Micro</workerType>
+		                <applicationName>cicd-set-payload</applicationName>
+		                <password>urvashi@12U</password>
+		                <muleVersion>4.4.0</muleVersion>
+		                <objectStoreV2>true</objectStoreV2>
+					</cloudHubDeployment>				
+				</configuration>				
 			</plugin>
 		</plugins>
 	</build>
